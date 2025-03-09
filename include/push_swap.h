@@ -6,7 +6,7 @@
 /*   By: anruiz-d <anruiz-d@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 13:00:39 by anruiz-d          #+#    #+#             */
-/*   Updated: 2025/03/09 12:28:02 by anruiz-d         ###   ########.fr       */
+/*   Updated: 2025/03/09 20:03:35 by anruiz-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,9 @@ void	ksort_2(t_stack *a, t_stack *b, int size);
 
 /*  push_swap */
 int	main(int argc, char *argv[]);
+
+/* -- ksort_mini  -- */
+void	stack_of_three(t_stack *stack);
+void stack_of_four(t_stack *stack);
 
 #endif

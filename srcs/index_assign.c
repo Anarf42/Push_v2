@@ -6,7 +6,7 @@
 /*   By: anruiz-d <anruiz-d@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 16:57:13 by anruiz-d          #+#    #+#             */
-/*   Updated: 2025/03/09 12:23:52 by anruiz-d         ###   ########.fr       */
+/*   Updated: 2025/03/09 19:31:48 by anruiz-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,10 +76,10 @@ void	index_stack(t_stack *stack, int size)
 	int	i;
 
 	if (!stack || stack->size == 0)
-        return;
+        return ;
     sorted_numbers = malloc(sizeof(int) * size);
-    if (!sorted_numbers)
-        return;
+    if(!sorted_numbers)
+		return ;
    	current = stack->head;
 	i = 0;
     while (i < size) 

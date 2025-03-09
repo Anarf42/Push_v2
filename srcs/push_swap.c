@@ -6,7 +6,7 @@
 /*   By: anruiz-d <anruiz-d@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 11:54:32 by anruiz-d          #+#    #+#             */
-/*   Updated: 2025/03/09 12:27:21 by anruiz-d         ###   ########.fr       */
+/*   Updated: 2025/03/09 20:05:37 by anruiz-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,12 @@ int	main(int argc, char *argv[])
 	count = argc - 1;
 	if (populate_stack(stack_a, numbers, count))
 		return (free(numbers), free_stack(stack_a), free_stack(stack_b), 1);
-	ksort(stack_a, stack_b, count);    
+	if (stack_a->size == 3)
+		stack_of_three(stack_a);
+	else if (stack_a->size ==4)
+		stack_of_four(stack_a);
+	else
+		ksort(stack_a, stack_b, count);    
 	free(numbers);
 	free_stack(stack_a);
 	free_stack(stack_b);

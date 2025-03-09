@@ -24,7 +24,7 @@ DIR_INCL	:=	include
 # --- Source files --- #
 
 PUSH_SRC_FIL	=	push_swap.c handle_numbers.c index_assign.c init_and_free.c \
-					ksort.c push.c reverse.c rotate.c swap.c utils.c
+					ksort.c push.c reverse.c rotate.c swap.c utils.c ksort_mini.c
 PUSH_SRC_DIR	=	$(addprefix $(DIR_SRCS)/, $(PUSH_SRC_FIL))
 
 # --- Object files --- #
@@ -33,7 +33,7 @@ PUSH_OBJ_FILE = $(PUSH_SRC_DIR:$(DIR_SRCS)/%.c=$(DIR_OBJS)/%.o)
 
 # --- compiler and tools --- #
 
-CC		=	CC
+CC		=	cc
 FLAGS	=	-Wall -Werror -Wextra -g
 INCLUDE	=	-I $(DIR_INCL)
 AR		=	ar
